@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+
+/* Main CSS starts form here */
+
+.hero{
+    margin-bottom: 60px;
+}
+.hero nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 0;
+}
+.hero nav .logo a{
+    text-decoration: none;
+    color: #2f2e41;
+    font-size: 34px;
+    font-weight: 600; 
+    font-family: 'Roboto', sans-serif;
+}
+.hero nav .search-bar{
+    width: 170px;
+    position: relative;
+    position: fixed;
+    right: 6%;
+    z-index: 99;
+}
+.hero nav .search-bar .search-field {
+	width: 100%;
+	border: none;
+	box-shadow: 0 2px 20px rgba(167, 158, 245, 0.2);
+	padding: 12px;
+	padding-left: 46px;
+	padding-right: 12px;
+	border-radius: 50px;
+}
+.hero nav .search-bar .search-field:focus{
+    border: none;
+    outline: none;
+}
+.hero nav .search-bar .icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.hero nav .search-bar .icon span {
+	position: absolute;
+	left: 18px;
+	top: 12px;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.hero-content .hero-img{
+    flex-basis: 40%;
+}
+.hero-content .hero-img img{
+    width: 490px;
+}
+.hero-content .hero-text-content{
+    flex-basis: 40%;
+}
+.hero-content .hero-text-content h1 {
+	font-size: 4rem;
+	color: #3D3D4A;
+	letter-spacing: 3px;
+	margin-bottom: 10px;
+    line-height: 60px;
+}
+.color{
+    color: #7a72ff;
+    font-family: 'Roboto', sans-serif;
+}
+.hero-content .hero-text-content h1 .spacing {
+	letter-spacing: 26px;
+}
+.hero-content .hero-text-content .btn {
+	border: none;
+	padding: 12px 40px;
+	background: #3D3D4A;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 40px;
+	margin-top: 10px;
+    transition: 0.4s;
+}
+.hero-content .hero-text-content .btn:hover{
+    background-color: #7a72ff;
+}
+
+.social-icons {
+	background-color: #fff;
+	box-shadow: 0 2px 28px rgba(56, 56, 57, 0.2);
+	width: 50px;
+	text-align: center;
+	padding: 1px;
+	border-radius: 20px;
+	position: fixed;
+	top: 30%;
+	left: 2%;
+}
+.social-icons a {
+	display: block;
+	margin: 30px 0;
+    color: #3D3D4A;
+    transition: 0.1s;
+}
+.social-icons a:nth-child(1):hover{
+    color: #3B5998;
+}
+.social-icons a:nth-child(2):hover{
+    color: #00acee;
+}
+.social-icons a:nth-child(3):hover{
+    color: #d62976;
+}
+.social-icons a:nth-child(4):hover{
+    color: #FF0000;
+}
+
+/* Bags section CSS starts from here */
+.bags-section{
+    box-shadow: 0 2px 40px rgba(167, 158, 245, 0.3);
+    border-radius: 10px;
+    padding: 60px;
+    width: 85%;
+    margin: 40px auto;
+}
+.product-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.bags-section .container h1{
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+.product-container .product-box{
+    background-color: #fff;
+    flex-basis: 30%;
+    padding: 45px 4px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.product-container .product-box:hover{
+    box-shadow: 0 2px 40px rgba(101, 101, 101, 0.2);
+}
+.product-box img{
+    width: 220px;
+}
+.product-box p {
+	margin: 10px 0;
+	color: #9e9e9e;
+}
+.product-box span {
+	display: block;
+	margin-bottom: 10px;
+}
+.product-box .atc {
+	border: none;
+	padding: 12px 36px;
+	border-radius: 40px;
+	background-color: #6b60ec;
+	color: #fff;
+	position: absolute;
+	right: 21%;
+	bottom: -5%;
+	visibility: hidden;
+}
+.product-container .product-box:hover .atc{
+    visibility: visible;
+}
+
+/* About section CSS starts from here */
+.about{
+    padding: 40px 0;
+}
+.about-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-row .about-content-col{
+    flex-basis: 48%;
+}
+.about-row .about-content-col h1 {
+	font-size: 50px;
+	margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #3D3D4A;
+}
+.about-row .about-content-col h2 {
+	font-size: 31px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 34px;
+}
+.about-row .about-content-col p{
+    color: rgb(156, 156, 156);
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+}
+.about-row .about-img-col{
+    flex-basis: 40%;
+}
+.about-row .about-img-col img{}
+
+/* Watches section CSS starts from here */
+
+.watches{
+    box-shadow: 0 2px 40px rgba(167, 158, 245, 0.3);
+    border-radius: 10px;
+    padding: 60px;
+    width: 85%;
+    margin: 60px auto;
+}
+.watches-item h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/* newsletter section CSS starts from here */
+.newsletter{
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.newsletter h1{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+.newsletter-field{
+    width: 550px;
+    margin: auto;
+    position: relative;
+}
+.newsletter-field input {
+	width: 100%;
+	border: none;
+	box-shadow: 0 2px 24px rgba(113, 113, 113, 0.3);
+	padding: 22px 20px;
+	border-radius: 40px;
+}
+.newsletter-field button {
+	border: none;
+	padding: 12px 30px;
+	background: #3D3D4A;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 40px;
+	position: absolute;
+	right: 2%;
+	top: 17%;
+    transition: 0.4s;
+}
+.newsletter-field button:hover{
+    background-color: #7a72ff;
+}
+
+/* footer section CSS starts from here */
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* responsive css here */
+
+@media (max-width: 960px) and (min-width:610px){
+    .hero nav {
+        padding: 4% 50px;
+    }
+    .hero-content .hero-img {
+        flex-basis: 100%;
+    }
+    .hero-content .hero-text-content {
+        flex-basis: 100%;
+    }
+    .hero-content {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .hero-content .hero-text-content {
+        flex-basis: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .hero-content .hero-text-content h1 {
+        width: 380px;
+        margin: 20px 0;
+        margin: auto;
+    }
+    .hero-content .hero-text-content .btn {
+        margin: 20px 0;
+        font-size: 16px;
+        padding: 20px 80px;
+    }
+    .product-box .atc {
+        padding: 12px 20px;
+        font-size: 12px;
+        right: 27%;
+    }
+    .about-row .about-content-col h1 {
+        font-size: 40px;
+    }
+    .about-row .about-content-col h2 {
+        font-size: 26px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin-bottom: 10px;
+        line-height: 34px;
+    }
+    .product-container .product-box {
+        flex-basis: 40%;
+    }
+    .about-row {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .about-row .about-content-col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .about-row .about-img-col {
+        flex-basis: 100%;
+    }
+    .about-row .about-content-col p {
+        width: 550px;
+    }
+    .hero-content .hero-text-content h1 {
+        font-size: 55px;
+    }
+    .about-row .about-img-col img {
+        width: 600px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .container{
+        max-width: 500px;
+        margin: auto;
+    }
+    .product-container .product-box {
+        flex-basis: 100%;
+    }
+    .hero nav .logo a {
+        font-size: 21px;
+    }
+    .hero-content {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .hero-content .hero-text-content {
+        flex-basis: 100%;
+        margin-top: 40px;
+    }
+    .hero-content .hero-text-content h1 {
+        width: 380px;
+        margin: 20px 0;
+        margin: auto;
+    }
+    .hero-content .hero-text-content .btn {
+        margin: 20px 0;
+        font-size: 16px;
+        padding: 20px 80px;
+    }
+    .hero-content .hero-img img {
+        width: 390px;
+    }
+    .hero-content .hero-text-content h1 {
+        font-size: 52px;
+    }
+    .product-box .atc {
+        right: 30%;
+    }
+    .newsletter-field {
+        width: 444px;
+        margin: auto;
+        position: relative;
+    }
+    .hero-content .hero-text-content {
+        text-align: center;
+    }
+}
+@media (max-width:450px){
+    .hero-content .hero-text-content h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .hero-content .hero-text-content .btn {
+        margin: 20px 0;
+        font-size: 16px;
+        padding: 12px 60px;
+    }
+    .about-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .newsletter-field {
+        width: 350px;
+    }
+    .newsletter h1 {
+        font-size: 17px;
+    }
+    .about-row .about-content-col h1 {
+        font-size: 35px;
+    }
+    .about-row .about-content-col h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .about-row .about-content-col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .product-box .atc {
+        right: 22%;
+    }
+    .about-row .about-content-col p {
+        width: 330px;
+        font-size: 15px;
+    }
+}
